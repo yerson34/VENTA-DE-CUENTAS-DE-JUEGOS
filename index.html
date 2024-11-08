@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Juegos</title>
     <link rel="stylesheet" href="styles.css">
-
+</head>
 <body>
+    <!-- Modal de aceptación de condiciones -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Aceptación de condiciones</h2>
+            <p>Al ingresar a este sitio, aceptas nuestros términos y condiciones. Al aceptar los terminos esta usted autorizando dar su ubicacion en la red.</p>
+            <button onclick="aceptarCondiciones()">Aceptar</button>
+        </div>
+    </div>
+
     <!-- Barra de navegación -->
     <div class="navbar">
-        <a>CUENTAS DE JUEGOS</a>
+        <h1><a  title="Inicio de la Tienda de Juegos">CUENTAS DE JUEGOS</a></h1>
+        
     </div>
 
     <!-- Contenedor de las tarjetas -->
@@ -17,18 +27,36 @@
         <!-- Tarjeta Mobile Legends -->
         <div class="card">
             <a href="cuentas de moba.html">
-                <img src="https://elcomercio.pe/resizer/v2/54RNO5QRMJFPLDUP7SDXJXMHOA.jfif?auth=ab18911effa1f79706ddacb431953aa38650a282144c057e68f8daf8582023f5&width=1200&height=675&quality=75&smart=true" alt="Mobile Legends Bang Bang">
-                <h3>CUENTAS DE MOBILE LEGENS BANG BANG</h3>
+                <img src="https://elcomercio.pe/resizer/v2/54RNO5QRMJFPLDUP7SDXJXMHOA.jfif?auth=ab18911effa1f79706ddacb431953aa38650a282144c057e68f8daf8582023f5&width=1200&height=675&quality=75&smart=true" alt="Cuentas de Mobile Legends Bang Bang">
+                <h3>CUENTAS DE MOBILE LEGENDS BANG BANG</h3>
             </a>
         </div>
 
         <!-- Tarjeta Free Fire -->
         <div class="card">
-            <a href="cuentas de freefire.html">
+            <a href="cuentas de freefire.HTML">
                 <img src="https://imgmedia.larepublica.pe/640x371/larepublica/original/2021/11/23/619cf3aaa6148331076a7194.webp" alt="Cuentas Free Fire">
-                <h3>CUENTAS FREE FIRE </h3>
+                <h3>CUENTAS FREE FIRE</h3>
             </a>
         </div>
+            <!-- Sección de Redes Sociales -->
+    <div class="social-media">
+        <a href="https://www.facebook.com/share/15im3zwPUv/" target="_blank" class="social-link">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://x.com/GersonFred8573?t=Pu3dhp_pxh7e0SPxuxiYfg&s=09" target="_blank" class="social-link">
+            <img src="/IMAGEN/icons8-twitter-64.png">
+        </a>
+        <a href="https://www.tiktok.com/@gameeerhub1_?_t=8q33DFNdmkA&_r=1" target="_blank" class="social-link">
+            <img src="./IMAGEN/pngwing.com (4).png" alt="tiktok" class="social-icon">
+        </a>
+        <a href="https://youtube.com/@gamers-f4w?si=4S-H6Xpcgw_T50rd" target="_blank" class="social-link">
+            <img src="/IMAGEN/pngwing.com (2).png" alt="you tube" class="social-icon">
+        </a>
+    </div>
+
+       
+        
     </div>
 
     <!-- Pie de página -->
@@ -36,15 +64,18 @@
         © 2024 Tienda de Juegos
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        // Mostrar el modal al cargar la página
+        window.onload = function() {
+            document.getElementById("modal").style.display = "flex";
+        };
+
+        // Función para aceptar las condiciones y ocultar el modal
+        function aceptarCondiciones() {
+            document.getElementById("modal").style.display = "none";
+        }
+    </script>
 </body>
 </html>
-
-    </div>
-
-    <script src="scripts.js"></script>
-</body>
-</html>
-
 
 
