@@ -30,10 +30,39 @@
                 width: 90%; /* Cambia el ancho para dispositivos móviles */
             }
         }
+        .back-button {
+    position: absolute; /* Para colocar el botón en la esquina */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    display: inline-flex;
+    align-items: center;
+}
+
+.back-button:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.button-icon {
+    width: 20px;  /* Ajuste de ancho */
+    height: 20px; /* Ajuste de altura */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
     </style>
 </head>
 <body>
     <header>
+        <a href="index.html" class="back-button">
+            <img src="./IMAGEN/pngwing.com.png" alt="Ícono de regreso" class="button-icon">
+            
+        </a>
         <h1>COMPRA DE CUENTAS DE FREEFIRE</h1>
     </header>
 
